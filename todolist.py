@@ -1,9 +1,6 @@
-a=['read','write','sleep','exercise']
-b=[]
-for i in a:
-    status=input(f"the status of {i} is:")
-    if status=="done":
-       continue
-    else:
-      b.append(i)
-print("pending works:",b)
+L={'read':'pending','write':'pending','sleep':'done','exercise':'done'}
+for key,value in L.items():
+   status = input(f"enter the status of the task  {key}:" )
+   L[key]=status
+print("The status of task are:",L)
+
